@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+    <title>click me game</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row bg-info rounded mb-3">
+            <h1 class="text-center mx-auto ">Click Me!</h1>
+        </div>
+        <div class="row">
+            <div class="col-6 ">
+                <canvas id="myCanvas" width=500 height=500></canvas>
+            </div>
+            <div class="col-6 ">
+                <div class="row">
+                    <div class="input-group mb-3">
+                        <button id="startBtn" type="button"
+                            class="form-control btn btn-primary mb-2 ml-1">Start</button>
+                        <button id="stoptBtn" type="button" class="form-control btn btn-danger mb-2 ml-1">Stop</button>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input id="rangeInpt" type="range" class="form-control" value="750" min="250" max="3000">
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="inputRangeValue"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row bg-info mb-3">
+                    <h3 class="text-center mx-auto ">Scores</h3>
+                </div>
+                <div class="row mb-3">
+                    <div class="col card text-white bg-primary mx-auto " style="max-width: 12rem;">
+                        <div class="card-header text-center mx-auto">Clicked</div>
+                        <div class="card-body">
+                            <h5 id="clickedScore" class="card-title text-center mx-auto"></h5>
+                        </div>
+                    </div>
+                    <div class="col card text-white bg-danger mx-auto" style="max-width: 12rem;">
+                        <div class="card-header text-center mx-auto">Missed</div>
+                        <div class="card-body">
+                            <h5 id="missedScore" class="card-title text-center mx-auto"></h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col card text-white bg-success mx-auto" style="max-width: 12rem;">
+                        <div class="card-header text-center mx-auto">Best Score</div>
+                        <div class="card-body">
+                            <h5 id="bestScore" class="card-title text-center mx-auto"></h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

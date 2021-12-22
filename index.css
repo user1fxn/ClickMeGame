@@ -1,0 +1,6 @@
+
+
+.pointerCanvasEvents {
+    cursor: not-allowed;
+    pointer-events: none;
+}
